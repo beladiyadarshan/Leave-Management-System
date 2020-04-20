@@ -1,0 +1,171 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterMenu.master.cs" Inherits="Admin_AdminMasterMenu" %>
+<%@ Register Src="Controls/ucAdminFooter.ascx" TagName="ucAdminFooter" TagPrefix="uc2" %>
+<%@ Register Src="Controls/ucAdminHeaderMenu.ascx" TagName="ucAdminHeaderMenu" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Easy Leave</title>
+    <link href="../App_Themes/Theme/black_world.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript">
+ 
+ function toggleAllCheckboexs(toggle)
+{
+				n = document.forms[0].length;
+				var frm = document.forms[0];
+				for(i=0;i<frm.length;i++)
+				
+					if(frm.elements[i].type=="checkbox")
+						if (frm.elements[i].name.indexOf('Cbx')==0)
+							frm.elements[i].checked=toggle;
+			}
+			
+ 
+ function onlyNumbers(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58))
+    return true;		             
+    else
+    return false ;		                            
+}
+function OnlyChars(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 64 && charCode < 91)||(charCode > 96 && charCode < 123) || charCode==32)
+    return true;		             
+    else
+    return false ;	
+}
+function onlyNumbersdot(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if (charCode > 47 && charCode < 58 || charCode==46)
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbershifen(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==45))
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbersUnderScore(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==95))
+    return true;		             
+    else
+    return false ;		                            
+} 
+  
+  </script> 
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+    <div>
+    <table width="815px" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="130" valign="top" >
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr >
+            <td class="border" style="width: 811px; text-align: center">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 264px">
+                    <tr>
+                        <td align="center" class="logo" style="width: 284px">
+                           Easy Leave</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2"
+                    Font-Bold="True" Font-Names="Verdana" Font-Size="X-Small" ForeColor="#284E98"
+                    Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="10px"
+                    Width="100%" Height="25px">
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <Items>
+                        <asp:MenuItem Text="||" Value="||"></asp:MenuItem>
+                        <asp:MenuItem Text="Administration" Value="Administration">
+                            <asp:MenuItem NavigateUrl="~/Admin/frmChangePassword.aspx" Text="Change Password" Value="Change Password">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmManageDept.aspx" Text="Manage Department" Value="Manage Document Category">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmManageCountry.aspx" Text="Manage Country" Value="Manage Country">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmManageState.aspx" Text="Manage State" Value="Manage State">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmManageCity.aspx" Text="Manage City" Value="Manage City">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmManageStatus.aspx" Text="Manage Status" Value="Manage Status">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/frmFindBalanceLeaves.aspx" Text="Manage Leave"
+                            Value="Manage Leave"></asp:MenuItem>
+                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/frmManageEmployee.aspx" Text="Manage Employee"
+                            Value="Manage Employee"></asp:MenuItem>
+                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/frmLeaveChecking.aspx" Text="Manage Leave Sanction"
+                            Value="Manage Leave Sanction"></asp:MenuItem>
+                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                        <asp:MenuItem Text="Reports" Value="Reports">
+                            <asp:MenuItem NavigateUrl="~/Admin/frmMonthlyLeaveTransactions.aspx" Text="Monthly Leave"
+                                Value="Monthly Leave"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmYearlyLeaveTransactions.aspx" Text="Yearly Leave"
+                                Value="Yearly Leave"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmPresentedEmpList.aspx" Text="PresentEmployeesList"
+                                Value="PresentEmployeesList"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/frmNextDayEmpList.aspx" Text="NextdayEmployeesList"
+                                Value="NextdayEmployeesList"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/frmSingOutSuccessFul.aspx" Text="Logout" Value="Logout">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="||" Value="||"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                </asp:Menu>
+            </td>
+        </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#7A7A7A" class="content" style="padding-top:10px; padding-bottom:10px; width: 815px;">
+    <div style="height:420px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="gold" class="content" align="center" style="text-align: center;" >
+        <uc2:ucAdminFooter ID="UcAdminFooter1" runat="server" />
+        </td>
+  </tr>
+</table>
+           
+    </div>
+    </form>
+</body>
+</html>

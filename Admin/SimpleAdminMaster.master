@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SimpleAdminMaster.master.cs" Inherits="Admin_SimpleAdminMaster" %>
+<%@ Register Src="Controls/ucAdminFooter.ascx" TagName="ucAdminFooter" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Welcome to Leave Management System</title>
+    <link href="../App_Themes/Theme/black_world.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+    <div>
+    <table width="779" border="0" align="center" cellpadding="0" cellspacing="0" class="bordermain">
+  <tr>
+    <td height="130" valign="top" style="background-image:url(../Images/bg.jpg); background-repeat:repeat-x;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table  border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tr>
+        <td class="border" style="text-align: center; width: 800px;"><table  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"  class="logo" style="width: 284px">
+                Easy Leave &nbsp;</td>
+          </tr>
+  
+        </table></td>
+        <td></td>
+      </tr>
+    </table></td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#7A7A7A" class="content" style="padding-top:10px; padding-bottom:10px;">
+        <div style="height:420px">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </div>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="gold" class="content" align="center" style="text-align: center" >
+        <uc1:ucAdminFooter ID="UcAdminFooter1" runat="server" />
+        </td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+</html>
