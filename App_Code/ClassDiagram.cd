@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="clsApplication_Logic">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MAoAAAAAAAAQCEiCAAIAKxAIAAAAAAQAAQQgAIAAAAQ=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsApplication_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsAdminLogin_Logic">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAEAAAQAAAAACAEAAAAAKAAAABAAAAAA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsBLAdminLogin_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsCity_Logic">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAiABWAAJQEoAAKIIEAAgAAEAAAAQIgAAAgABAAAAJA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsCity_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsCommon_Logic">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABSAIJQEAAACAIEAAgCAAAAAAAIQAAAAAAAAAAYI=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsCommon_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsCountry_Logic">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgCCQAQJAEIAAGAAEAAAAAAAAAAQAQAgAAEAAAAABA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsCountry_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsDept_Logic">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACgACAAAIAAICACAAAkAAAAAAAACQAQAAAIAAAACABg=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsDept_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsEmployee_Logic">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAgAAIAxUQCAgEQQMEIEAGYCIUARAiADBQhAgGACgBA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsEmployee_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsEmployeeLogin_Logic">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQAAAEAAAAIAAAACAEAAAAACAQAAABAAAAA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsEmployeeLogin_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsLeave_Logic">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FgiSAACgCCCIiEACBAYgCBAIAQEAAgYAAYwQAIAAAgQ=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsLeave_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsState_Logic">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgABUAIJQEAAACIAEAAABAAAAAAQAQQAABABAAACJA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsState_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsStatus_Logic">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAkIAAAAACAABAQAAAEAAAIQAAAABAAAAAAABA=</HashCode>
+      <FileName>App_Code\Classes\BOL\clsStatus_Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClsConnectionString">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Classes\ConnectionString\ClsConnectionString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsDbConnector">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIACAAgAAAAAQBAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>App_Code\Classes\DAL\clsDbConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ApplicationBlocks.Data.SqlHelper">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Microsoft.ApplicationBlocks.Data.SqlHelper.SqlConnectionOwnership" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>App_Code\Classes\DAL\SQLHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAAACAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Classes\DAL\SQLHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ApplicationBlocks.Data.SqlHelperParameterCache">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Classes\DAL\SQLHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
